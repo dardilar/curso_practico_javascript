@@ -1,10 +1,10 @@
 :root {
-    --sm: 1.2rem;
-    --md: 1.6rem;
-    --lg: 1.8rem;
-    --primary-color: #1ABC9C;
-    --seconday-color: #F6DDCC;
-    --font-color: #FDFEFE;
+    --font: #2C3E50;
+    --lg: 2.2rem;
+    --md: 1.8rem;
+    --sm: 1.4rem;
+    --primary-color: #EBEDEF   ;
+    --seconday-color: #FBEEE6;
 }
 
 * {
@@ -18,22 +18,20 @@ html {
 }
 
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .header {
-    background-color: var(--primary-color);
-    color: var(--font-color);
+    background-color: var(--seconday-color);
+    color: var(--font);
     width: 100%;
     height: 20vh;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
+    padding: 4rem;
 }
 
 .header h1 {
-    margin-bottom: 1.6rem;
     font-size: var(--lg);
+    margin-bottom: 0.8rem;
 }
 
 .header p {
@@ -41,44 +39,64 @@ body {
 }
 
 .main {
-    width: 100%;
+    background-color: var(--primary-color);
     height: 100%;
-    background-color: var(--seconday-color);
+    height: 80vh;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.square-container {
-    width: 100%;
-    height: 28rem;
-    margin: 0.8rem;
-    padding-top: 3.5rem;
-    border: 0.4rem solid var(--primary-color);
-    display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+}   
+
+.figure-container {
+    width: 37rem;
+    height: 40rem;
+    background-color: var(--seconday-color);
+    border: 0.2rem solid var(--font);
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
 }
 
-.square-title {
+.figure-title {
     font-size: var(--md);
-    margin-bottom: 3rem;
+    color: var(--font);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
-.square-form {
+.figure-form {
+    padding: 0.4rem;
     display: flex;
     flex-direction: column;
 }
 
-.square-description {
+.figure-form p {
     font-size: var(--sm);
     margin-bottom: 4rem;
 }
 
-.input {
-    margin-bottom: 4rem;
+.figure-form span {
+    color: var(--font);
+    font-weight: bold;
 }
 
-.perimeter-button {
-    margin-bottom: 0.4rem;
+.figure-form div input {
+    width: 16rem;
 }
+
+.perimeter-button, 
+.altura-button,
+.area-button {
+    background-color: var(--font);
+    color: var(--seconday-color);
+    margin-top: 4rem;
+    width: 12rem;
+    height: 3rem;
+    border: none;
+}
+
+.perimeter-button {}
+
