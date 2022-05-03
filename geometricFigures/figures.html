@@ -17,32 +17,27 @@
     </header>
 
     <main class="main">
-
-
         <div class="figure-container">
             <h2 class="figure-title">Cuadrado</h2>
-
             <form action="">
                 <label class="figure-form" for="InputCuadrado">
                     <p>Ingresa los campos correspondientes para calcular el perimetro o área del cuadrado</p>
-
                     <div>
                         <span>Lado (l)</span>
                         <input type="number" id="InputCuadrado" name="InputCuadrado">
                     </div>
-
                 </label>
-
+                
                     <input class="perimeter-button" value="Calcular Perímetro" type="button" onclick="calcularPerimetroCuadrado()">
                     <input class="area-button" value="Calcular Área" type="button" onclick="calcularAreaCuadrado()">
 
+                    <p class="resultPerimeter" id="squarePerimeter"></p>
+                    <p class="resultArea" id="squareArea"></p>
             </form>
         </div>
 
-
         <div class="figure-container">
             <h2 class="figure-title">Triangulo</h2>
-
             <form action="">
                 <label class="figure-form" for="InputLado1Triangulo">
                     <p>Ingresa los campos correspondientes para calcular el perimetro o área del triangulo</p>
@@ -50,14 +45,12 @@
                     <span>Lado 1 (l)</span>
                     <input type="number" id="InputLado1Triangulo" name="InputLado1Triangulo">
                 </div>
-                 
                 </label>
                 <label class="figure-form" for="InputLado2Triangulo">
                     <div>
                         <span>Lado 2 (l)</span>
                         <input type="number" id="InputLado2Triangulo" name="InputLado2Triangulo">
                     </div>
-
                 </label>
                 <label class="figure-form" for="InputBaseTriangulo">
                     <div>
@@ -74,6 +67,9 @@
 
                     <input class="perimeter-button" value="Calcular Perímetro" type="button" onclick="calcularPerimetroTriangulo()">
                     <input class="area-button" value="Calcular Área" type="button" onclick="calcularAreaTriangulo()">
+
+                    <p class="resultPerimeter" id="trianglePerimeter"></p>
+                    <p class="resultArea" id="triangleArea"></p>
             </form>
         </div>
 
@@ -87,17 +83,18 @@
                         <span>Radio (r)</span>
                         <input type="number" id="InputCirculo" name="InputCirculo">
                     </div>
-
                 </label>
                 
                     <input class="perimeter-button" value="Calcular Perímetro" type="button" onclick="calcularPerimetroCirculo()">
                     <input class="area-button" value="Calcular Área" type="button" onclick="calcularAreaCirculo()">
+
+                    <p class="resultPerimeter" id="circlePerimeter"></p>
+                    <p class="resultArea" id="circleArea"></p>
             </form>
         </div>
 
         <div class="figure-container">
             <h2 class="figure-title">Altura Isósceles</h2>
-
             <form action="">
                 <label class="figure-form" for="InputLadosIsosceles">
                     <p>Ingresa los campos correspondientes para calcular la altura del triangulo isósceles</p>
@@ -111,10 +108,11 @@
                         <span>Base (b)</span>
                         <input type="number" id="InputBaseIsosceles" name="InputBaseIsosceles">
                     </div>
-            
                 </label>
 
                     <input class="altura-button" value="Calcular Altura" type="button" onclick="calcularAlturaTriangulo()">
+
+                    <p class="resultPerimeter" id="triangleHeight"></p>
             </form>
         </div>
         

@@ -50,7 +50,7 @@ body {
 
 .figure-container {
     width: 37rem;
-    height: 40rem;
+    height: 50rem;
     background-color: var(--seconday-color);
     border: 0.2rem solid var(--font);
     border-radius: 2%;
@@ -96,4 +96,14 @@ body {
     width: 12rem;
     height: 3rem;
     border: none;
+}
+
+.resultPerimeter {
+    margin-top: 20px;
+    font-size: 1.6rem;
+}
+
+.resultArea {
+    margin-top: 0;
+    font-size: 1.6rem;
 }
