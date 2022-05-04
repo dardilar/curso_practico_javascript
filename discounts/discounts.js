@@ -15,11 +15,8 @@ function calcularPrecioConDescuento(precio, descuento) {
 // })
 
 function precioTotal() {
-    const inputPrice = document.getElementById("InputPrice");
-    const price = inputPrice.value;
-
-    const inputDiscount = document.getElementById("InputDiscount");
-    const discount = inputDiscount.value;
+    const price = document.getElementById("InputPrice").value;
+    const discount = document.getElementById("InputDiscount").value;
 
     const precioTotal = calcularPrecioConDescuento(price, discount);
     
